@@ -27,21 +27,21 @@ class Octagon:
         per_oct=side*8
         return(sq_oct, per_oct)
     
-    def drawing(self, side):
-        ws = tr.Screen()
+    # def drawing(self, side):
+    #     ws = tr.Screen()
  
-        # defining a turtle instance
-        turt = tr.Turtle()
+    #     # defining a turtle instance
+    #     turt = tr.Turtle()
  
-        # iterating the loop 8 times
-        for i in range(8):
+    #     # iterating the loop 8 times
+    #     for i in range(8):
    
-            # moving turtle 100 units forward
-            turt.forward(side)
+    #         # moving turtle 100 units forward
+    #         turt.forward(side)
      
-            # turning turtle 45 degrees so 
-            # as to make perfect angle for an octagon
-            turt.left(45)
+    #         # turning turtle 45 degrees so 
+    #         # as to make perfect angle for an octagon
+    #         turt.left(45)
         
 
 #Oct_make func
@@ -59,7 +59,7 @@ def oct_count(oct):
     print("Radius of in circle:", Rad_in, "   Square of in circle:", Sq_in)
     Sq_oct, Per_oct = oct1.sq_per_oct(side_length)
     print("Square of octagon:", Sq_oct, "   Perimeter of octagon:", int(Per_oct))
-    oct1.drawing(side_length)
+    #oct1.drawing(side_length)
 
 def main():
     oct2=oct_make()
